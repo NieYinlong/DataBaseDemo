@@ -15,6 +15,8 @@
 		F52BF6E61F2B2D9F001D5698 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F52BF6E41F2B2D9F001D5698 /* LaunchScreen.storyboard */; };
 		F52BF6F11F2B2D9F001D5698 /* DataBaseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BF6F01F2B2D9F001D5698 /* DataBaseDemoTests.m */; };
 		F52BF6FC1F2B2D9F001D5698 /* DataBaseDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BF6FB1F2B2D9F001D5698 /* DataBaseDemoUITests.m */; };
+		F52BF70B1F2B2DC9001D5698 /* DataBaseHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = F52BF70A1F2B2DC9001D5698 /* DataBaseHandle.m */; };
+		F52BF70E1F2B2FB4001D5698 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F52BF70D1F2B2FB4001D5698 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		F52BF6F71F2B2D9F001D5698 /* DataBaseDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DataBaseDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F52BF6FB1F2B2D9F001D5698 /* DataBaseDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataBaseDemoUITests.m; sourceTree = "<group>"; };
 		F52BF6FD1F2B2D9F001D5698 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F52BF7091F2B2DC9001D5698 /* DataBaseHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataBaseHandle.h; sourceTree = "<group>"; };
+		F52BF70A1F2B2DC9001D5698 /* DataBaseHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataBaseHandle.m; sourceTree = "<group>"; };
+		F52BF70D1F2B2FB4001D5698 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52BF70E1F2B2FB4001D5698 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +91,7 @@
 				F52BF6EF1F2B2D9F001D5698 /* DataBaseDemoTests */,
 				F52BF6FA1F2B2D9F001D5698 /* DataBaseDemoUITests */,
 				F52BF6D41F2B2D9F001D5698 /* Products */,
+				F52BF70C1F2B2FB4001D5698 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +112,8 @@
 				F52BF6DA1F2B2D9F001D5698 /* AppDelegate.m */,
 				F52BF6DC1F2B2D9F001D5698 /* ViewController.h */,
 				F52BF6DD1F2B2D9F001D5698 /* ViewController.m */,
+				F52BF7091F2B2DC9001D5698 /* DataBaseHandle.h */,
+				F52BF70A1F2B2DC9001D5698 /* DataBaseHandle.m */,
 				F52BF6DF1F2B2D9F001D5698 /* Main.storyboard */,
 				F52BF6E21F2B2D9F001D5698 /* Assets.xcassets */,
 				F52BF6E41F2B2D9F001D5698 /* LaunchScreen.storyboard */,
@@ -138,6 +147,14 @@
 				F52BF6FD1F2B2D9F001D5698 /* Info.plist */,
 			);
 			path = DataBaseDemoUITests;
+			sourceTree = "<group>";
+		};
+		F52BF70C1F2B2FB4001D5698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F52BF70D1F2B2FB4001D5698 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +224,7 @@
 				TargetAttributes = {
 					F52BF6D21F2B2D9F001D5698 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 59VQA7756F;
 						ProvisioningStyle = Automatic;
 					};
 					F52BF6EB1F2B2D9F001D5698 = {
@@ -273,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F52BF70B1F2B2DC9001D5698 /* DataBaseHandle.m in Sources */,
 				F52BF6DE1F2B2D9F001D5698 /* ViewController.m in Sources */,
 				F52BF6DB1F2B2D9F001D5698 /* AppDelegate.m in Sources */,
 				F52BF6D81F2B2D9F001D5698 /* main.m in Sources */,
@@ -424,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59VQA7756F;
 				INFOPLIST_FILE = DataBaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyl.DataBaseDemo;
@@ -435,6 +455,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 59VQA7756F;
 				INFOPLIST_FILE = DataBaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nyl.DataBaseDemo;
